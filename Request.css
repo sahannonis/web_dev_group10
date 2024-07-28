@@ -1,0 +1,126 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "div1 div2";
+    width: 100%;
+    height: 95vh;
+    gap: 7px;
+}
+
+#leftdiv {
+    font-family: 'Garamond', serif;
+    background-image: url('Wedding Jewelery.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-area: div1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: rgba(255, 255, 255, 255);
+    height: 100%;
+}
+
+#leftdiv .title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    color: #412803;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#leftdiv .description {
+    font-style: italic;
+    font-size: 1.6em;
+    text-align: center;
+    color: #151414;
+}
+
+#rightdiv {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #d3d0d0;
+    grid-area: div2;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-row label {
+    margin-bottom: 5px;
+}
+
+.mandatory {
+    color: red;
+    margin-left: 5px;
+}
+
+.form-row input, .form-row textarea {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    border: none;
+    padding: 10px 20px;
+    background-color: #5cb85c;
+    color: white;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+input[type="submit"]:hover {
+    background-color: #4cae4c;
+}
+
+@media (max-width: 767px) {
+    #container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
+        grid-template-areas: 
+        'div1' 
+        'div2';
+        margin: auto;
+    }
+
+    #rightdiv {
+        height: auto;
+    }
+
+    #leftdiv {
+        height: 40vh;
+        background-position: center;
+        align-items: stretch;
+        justify-content: center;
+    }
+}
