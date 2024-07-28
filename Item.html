@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Item Description</title>
+    <link rel="stylesheet" href="Item.css" />
+    <script defer src="Item.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="leftdiv">
+          <img
+            id="itemImage"
+            src="https://picsum.photos/700/400?image=0"
+            alt="Item Image"
+          />
+          <div id="thumbnails">
+            <img
+              src="https://picsum.photos/300/300?image=0"
+              alt="Image 1"
+              onclick="changeImage('https://picsum.photos/700/400?image=0')"
+            />
+            <img
+              src="https://picsum.photos/300/300?image=1"
+              alt="Image 2"
+              onclick="changeImage('https://picsum.photos/700/400?image=1')"
+            />
+            <img
+              src="https://picsum.photos/300/300?image=2"
+              alt="Image 3"
+              onclick="changeImage('https://picsum.photos/700/400?image=2')"
+            />
+            <img
+              src="https://picsum.photos/300/300?image=3"
+              alt="Image 4"
+              onclick="changeImage('https://picsum.photos/700/400?image=3')"
+            />
+            <img
+              src="https://picsum.photos/300/300?image=4"
+              alt="Image 5"
+              onclick="changeImage('https://picsum.photos/700/400?image=4')"
+            />
+          </div>
+      </div>
+      <div id="rightdiv">
+        <h1 class="title">The Berlin - Diamond Engagement Ring</h1>
+        <p class="priceTag"><strong>Price: C$ 800</strong></p>
+        <p>Item Code: V5H8CBL</p>
+        <div class="rating">
+          <h3>Rating:</h3>
+          <span class="star filled">★</span>
+          <span class="star filled">★</span>
+          <span class="star filled">★</span>
+          <span class="star filled">★</span>
+          <span class="star">★</span>
+        </div>
+        <p>
+          Description:<br /><br />Celebrate your love story with our Timeless Elegance Diamond Engagement Ring, a masterpiece of sophistication and grace. Expertly crafted from high-quality platinum, this ring features a dazzling round-cut diamond at its center, securely set to maximize its brilliance
+        </p>
+        <ul>
+          <li>Made in Sweden</li>
+          <li>Premium Platinum Metal</li>
+          <li>Center Stone</li>
+          <li>Gold Plated Brass</li>
+        </ul>
+        <button id="addToCart">Add to Cart</button>
+      </div>
+    </div>
+  </body>
+</html>
