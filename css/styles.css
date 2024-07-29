@@ -187,6 +187,8 @@ nav a:hover {
 .trending-images {
     display: flex;
     justify-content: space-around;
+    width: 100%;
+    overflow: hidden;
 }
 
 .trending-images img {
