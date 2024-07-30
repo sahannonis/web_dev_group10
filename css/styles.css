@@ -75,11 +75,6 @@ nav a:hover {
     text-align: center;
 }
 
-.hero-content {
-    position: relative;
-    z-index: 1;
-}
-
 .hero-logo {
     width: 300px;
     height: auto;
@@ -91,29 +86,9 @@ nav a:hover {
     margin: 20px 0;
     animation: fadeIn 3s ease-out;
     color: #000000;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
-.hero-description {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-    animation: fadeIn 4s ease-out;
-    color: #000000;
-}
-
-.hero-button {
-    padding: 10px 20px;
-    font-size: 1rem;
-    color: #fff;
-    background-color: #007bff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.hero-button:hover {
-    background-color: #0056b3;
-}
 
 /* Animations */
 @keyframes bounce {
