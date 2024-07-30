@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "div1 div2";
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+
+}
+
+#leftdiv {
+    grid-area: div1;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #d3d0d0;
+}
+
+#rightdiv {
+    grid-area: div2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(255, 253, 253, 0.588);
+}
+
+#rightdiv .title
+{
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+#rightdiv .priceTag
+{
+    font-size: 1.5em;
+}
+
+#itemImage {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#thumbnails {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#thumbnails img {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border-color 0.3s;
+}
+
+#thumbnails img:hover {
+    border-color: #000;
+}
+
+#addToCart {
+    margin-top: 20px;
+    padding: 5px 10px;
+    font-size: 17px;
+    cursor: pointer;
+    background-color: #9f9435;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    width: 130px;
+    transition: background-color 0.3s;
+}
+
+#addToCart:hover {
+    background-color: #ded126;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.rating span {
+    margin-right: 3px;
+    font-size: 30px;
+}
+
+.star {
+    font-size: 30px;
+    color: #ddd;
+}
+
+.star.filled {
+    color: #f0c420;
+}
+
+@media (max-width: 767px) {
+    #container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
+        grid-template-areas: 
+        'div1' 
+        'div2';
+        margin: auto;
+    }
+
+    #leftdiv, #rightdiv {
+        height: auto;
+    }
+}
